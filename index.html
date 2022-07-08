@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Weather App</title>
+	<meta name="description" content="weather app">
+	<meta name="keywords" content="weather app">
+	<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+	<h1>Welcome to the Weather App!</h1>
+	<h4>Please enter in a city to see weather stats</h4>
+	
+	<form>
+		<input type="text" id="search" name ="search" placeholder="Search"> <button type="button" onclick="apiCall()">Search</button><br><br>
+		<label>Temperature:</label>&nbsp;
+		<input id="temp" type="text" readonly="readonly" value="0">
+		
+		<label>Fahrenheit:</label>
+		<input type="radio" id="fah" name="temp" onclick="convertTemp()">
+		
+		<label>Celsius:</label>
+		<input type="radio" id="cel" name="temp" onclick="convertTemp()"><br><br>
+		
+		<label>Humidity:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="humidity" readonly="readonly" value="0"><br>
+		
+		<label>Pressure:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="pressure" readonly="readonly" value="0"><br>
+		
+		<label>Description:</label>&nbsp;&nbsp;
+		<input id="description" readonly="readonly" value="0"><br>
+		
+		<label>Latitude:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="lat" readonly="readonly" value="0"><br>
+		
+		<label>Longitude:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="lon" readonly="readonly" value="0"><br>
+		
+		<label>Country:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="country" readonly="readonly" value="0">
+	</form>
+<script src="script.js"></script>
+</body>
+</html>
